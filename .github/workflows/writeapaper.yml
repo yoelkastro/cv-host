@@ -27,7 +27,7 @@ jobs:
           run: |
               cd ${{ env.DIR }}
               lualatex ${{ env.FILE }}
-              bibtex ${{ env.FILE }}
+              # bibtex ${{ env.FILE }}
               lualatex ${{ env.FILE }}
               lualatex ${{ env.FILE }}
       - name: move
