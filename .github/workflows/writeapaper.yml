@@ -26,10 +26,10 @@ jobs:
         with:
           run: |
               cd ${{ env.DIR }}
-              luatex ${{ env.FILE }}
+              lualatex ${{ env.FILE }}
               bibtex ${{ env.FILE }}
-              luatex ${{ env.FILE }}
-              luatex ${{ env.FILE }}
+              lualatex ${{ env.FILE }}
+              lualatex ${{ env.FILE }}
       - name: move
         run: |
             mkdir -p github_artifacts
